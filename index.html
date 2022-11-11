@@ -1,71 +1,88 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Botez Daria</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="kitty.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="kitty.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
+    <header>
+      
+      <div class="container">
+        <img src="images/logo-girl.png" alt="logo" class="logo" />
+        <nav>
+          <ul class="nav-links" id="navItem">
+            <li><a href="#HomeSection">Home</a></li>
+            <li><a href="#SkillSection">Skills</a></li>
+            <li><a href="#ContactSection">Contact</a></li>
+          </ul>
 
 
-  <header>
-    <div class= "container">
 
-      <img src="images/logo.png" alt="logo" class="logo">
+          <div class="burger" id="burgerItem">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+      </div>
+    </header>
 
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-
-
-      </na v>
-
+   <div class="background-video">
+      <video class="video" src="images/background-video.mp4"muted loop autoplay></video>
+      <div class="top-container">
+        <h1>I'm Daria</h1>
+        <h2>a student</h2>
+        <img class="me-dev" src="images/me-dev.png" alt="me-dev" />
+      </div>
     </div>
-  </header>
 
-
-    <div class="top-container">
-      <img class="top-cloud"src="images/cloud.png" alt="cloud-img">
-      <h1>I'm Daria</h1>
-      <h2>a student</h2>
-      <img class="desktop"src="images/desktop.png" alt="desktop-img">
-      <img class="bottom-cloud"src="images/cloud.png" alt="cloud-img">
-
-
-
-
-    </div>
+   
+   
 
     <div class="middle-container">
-      <div class="profile">
-        <img class="profile-pic"src="images/kitty.png" alt="kitty-img">
+      <div class="profile" id="HomeSection">
+        <img class="profile-pic" src="images/kitty.png" alt="kitty-img" />
         <h2>Hello</h2>
-        <p class="intro">I am a hardworking student seeking opportunities for learning and evolving.</p>
+        <p class="intro">
+          I am a hardworking student seeking opportunities for learning and
+          evolving.
+        </p>
       </div>
-      <hr>
-      <div class="skills">
+      <hr />
+      <div class="skills" id="SkillSection">
         <h2>My Skills</h2>
         <div class="skill-row">
-          <img class="coding-gif" src="images/giphy.gif" alt="">
+          <img class="coding-gif" src="images/coding-gif.gif" alt="" />
           <h3>Coding</h3>
-          <p>As a technology enthusiast I look forward to using my innovative programming abilities to make the world a more unified and connected place.</p>
+          <p>
+            As a technology enthusiast I look forward to using my innovative
+            programming abilities to make the world a more unified and connected
+            place.
+          </p>
         </div>
         <div class="skill-row">
-          <img class="idea-gif" src="images/idea.gif" alt="">
+          <img class="idea-gif" src="images/idea-gif.gif" alt="" />
           <h3>Creative Thinking</h3>
-          <p>Looking at problems or situations from a fresh perspective that suggests unorthodox solutions has always been one of my best traits.</p>
+          <p>
+            Looking at problems or situations from a fresh perspective that
+            suggests unorthodox solutions has always been one of my best traits.
+          </p>
         </div>
       </div>
-      <hr>
-      <div class="contact-me">
+      <hr />
+      <div class="contact-me" id="ContactSection">
         <h2>Get In Touch</h2>
         <h3>If my interests are similar to yours</h3>
         <p>I look forward to hearing from you</p>
@@ -73,14 +90,13 @@
       </div>
     </div>
 
-
     <div class="bottom-container">
-      <a class="footer-link" href="https://www.linkedin.com/in/botez-daria-3b257a223/">LinkedIn</a>
-      <a class="footer-link" href="https://twitter.com/dariabtz">Twitter</a>
-      <a class="footer-link" href="https://github.com/dariabotez">Github</a>
-      <p class="copyright"> © Botez Daria</p>
+      <a class="footer-link" href="https://www.linkedin.com/in/botez-daria-3b257a223/" ><img src="images/linkedin.png"></a>
+      <a class="footer-link" href="https://twitter.com/dariabtz"><img src="images/twitter.png"></a>
+      <a class="footer-link" href="https://github.com/dariabotez"><img src="images/github.png"></a>
+      <p class="copyright">© Botez Daria</p>
     </div>
 
-
+    <script src="js/app.js"></script>
   </body>
 </html>
