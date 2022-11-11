@@ -3,9 +3,12 @@
 }
 
 header{
-  background: #FFE8DF;
+  /*background: #FFE8DF;*/
   z-index: 101;
-  position: relative;
+  position: fixed;
+  top:0;
+  width:100%;
+  background: transparent;
 }
 
 header::after {
@@ -36,6 +39,9 @@ nav{
 .nav-links li{
   list-style: none;
 }
+.nav-links li a:hover{
+    color:white;
+}
 
 body {
   margin: 0;
@@ -49,28 +55,31 @@ h1 {
 margin: 50px auto 0 auto;
 font-size: 5.625rem;
 font-family: 'Sacramento', cursive;
-color: #CBA0AE;
+/* color: #CBA0AE; */
+color:#412323;
 }
 
 
 h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
-  color:#CBA0AE;
+  /* color:#CBA0AE; */
+  color: #4C241D;
   font-weight: normal;
   padding-bottom: 10px;
 }
 
 h3 {
   font-family: 'Montserrat', sans-serif;
-  color: #D9ADAD;
+  /* color: #D9ADAD; */
+  color:#4C241D;
 }
 
 p{
   line-height: 2;
 }
 hr{
-  border: dotted #FFE6E6 6px;
+  border: dotted #5e4040 6px;
   border-bottom: none;
   width: 5%;
   margin: 100px auto 100px auto;
@@ -82,7 +91,7 @@ a:hover{
 }
 
 .footer-link{
-  color:#E2BCB7;
+  color:#4C241D;
   font-family: 'Montserrat', sans-serif;
   margin: 10px 20px;
   text-decoration: none;
@@ -94,18 +103,22 @@ a:hover{
 }
 
 .top-container {
-  background-color: #FFE8DF;
+  /* background-color: #FFE8DF; */
   position: relative;
   padding-top: 100px;
   height: 100vh;
+  background: transparent;
+
 }
 
 .middle-container{
-  margin: 100px 0;
+  padding: 100px 0;
+  background-color: #c3c6c6;
 }
 
 .bottom-container{
-  background-color:#FFE8DF;
+  /* background-color:#FFE8DF; */
+  background-color: #cacccc;
   padding: 50px 0 20px;
 }
 .logo{
@@ -119,20 +132,8 @@ a:hover{
   margin: 40px auto 60px;
 }
 
-
-.bottom-cloud{
-  position: absolute;
-  left: 300px;
-  bottom:300px;
-}
-
-.top-cloud {
-  position: absolute;
-  right: 300px;
-  top: 50px;
-}
-.desktop{
-  width: 20%;
+.me-dev{
+  width: 8%;
 }
 
 .intro{
@@ -143,7 +144,7 @@ a:hover{
   width: 15%;
 }
 .coding-gif{
-  width: 25%;
+  width: 24%;
   float: left;
   margin: 30px;
 }
@@ -160,36 +161,38 @@ a:hover{
 }
 
 .idea-gif{
-   width: 30%;
+   width: 25%;
    float: right;
    margin-left: 30px;
  }
 
 
-.btn {
-  background: #E2BCB7;
-  background-image: -webkit-linear-gradient(top, #E2BCB7, #CBA0AE);
-  background-image: -moz-linear-gradient(top, #E2BCB7, #CBA0AE);
-  background-image: -ms-linear-gradient(top, #E2BCB7, #CBA0AE);
-  background-image: -o-linear-gradient(top, #E2BCB7, #CBA0AE);
-  background-image: linear-gradient(to bottom, #E2BCB7, #CBA0AE);
-  -webkit-border-radius: 8;
-  -moz-border-radius: 8;
-  border-radius: 8px;
-  font-family: 'Montserrat', sans-serif;
-  color: #ffffff;
-  font-size: 20px;
+ .btn {
+  background: #613030;
+  background-image: -webkit-linear-gradient(top, #613030, #302727);
+  background-image: -moz-linear-gradient(top, #613030, #302727);
+  background-image: -ms-linear-gradient(top, #613030, #302727);
+  background-image: -o-linear-gradient(top, #613030, #302727);
+  background-image: linear-gradient(to bottom, #613030, #302727);
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  text-shadow: 1px 1px 3px #666666;
+  font-family: Georgia;
+  color: white;
+  font-size: 18px;
   padding: 10px 20px 10px 20px;
+  border: dotted #000000 1px;
   text-decoration: none;
 }
 
 .btn:hover {
-  background: #E3BEC6;
-  background-image: -webkit-linear-gradient(top, #E3BEC6, #E2C2B9);
-  background-image: -moz-linear-gradient(top, #E3BEC6, #E2C2B9);
-  background-image: -ms-linear-gradient(top, #E3BEC6, #E2C2B9);
-  background-image: -o-linear-gradient(top, #E3BEC6, #E2C2B9);
-  background-image: linear-gradient(to bottom, #E3BEC6, #E2C2B9);
+  background: #4d2e2e;
+  background-image: -webkit-linear-gradient(top, #4d2e2e, #5e4040);
+  background-image: -moz-linear-gradient(top, #4d2e2e, #5e4040);
+  background-image: -ms-linear-gradient(top, #4d2e2e, #5e4040);
+  background-image: -o-linear-gradient(top, #4d2e2e, #5e4040);
+  background-image: linear-gradient(to bottom, #4d2e2e, #5e4040);
   text-decoration: none;
 }
 
@@ -217,6 +220,7 @@ background-color: #4C241D;
 .nav-active{
   transform: translateX(0);
 }
+
 
 @media screen and (max-width: 1024px){
 .nav-links{
@@ -253,4 +257,20 @@ background-color: #4C241D;
   transform: translateX(0);
 }
 
+}
+
+.background-video{
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  right: 0;
+}
+.video{
+  position:absolute;
+  top: 0;
+  right:0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  bottom: 0;
 }
